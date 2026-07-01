@@ -14,7 +14,7 @@ def pregunta_01():
 
     Rta/
 
-        40
+    40
     """
     df = pd.read_csv('files/input/tbl0.tsv', sep='\t')
     return df.shape[0]

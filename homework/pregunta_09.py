@@ -25,7 +25,7 @@ def pregunta_09():
 
     """
     df = pd.read_csv('files/input/tbl0.tsv', sep='\t')
-    df['c3'] = pd.to_datetime(df['c3'])
+    df["c3"] = pd.to_datetime(df["c3"], dayfirst=True)
     df['year'] = df['c3'].dt.year.astype(str)
     return df 
 print(pregunta_09())
